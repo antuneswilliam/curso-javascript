@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Teste Javascript</title>
+</head>
+
+<body>
+
+    <script>
+        //condicionais
+        function retornaSexoIf(sexo) {
+            // M,F
+            // Masculino, Feminino
+
+            // === (três iguais compara além do valor o tipo das variáveis)
+            if (sexo === "M") {
+                return "Masculino"
+            } else if (sexo === "F") {
+                return "Feminino"
+            } else {
+                return "Outro"
+            }
+
+        }
+
+        var resultado = retornaSexoIf("F");
+        console.log(resultado);
+
+        function retornaSexoSwitch(sexo) {
+            // M,F
+            // Masculino, Feminino
+
+            // === (três iguais compara além do valor o tipo das variáveis)
+            switch (sexo) {
+                case "M":
+                    return "Masculino"
+                case "F":
+                    return "Feminino"
+                default:
+                    return "Outro";
+            }
+
+        }
+
+        var resultado = retornaSexoSwitch("M");
+        console.log(resultado);
+    </script>
+
+</body>
+
+</html>

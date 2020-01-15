@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <title>Teste Javascript</title>
+</head>
+
+<body>
+
+    <div id="app">
+
+        <input type="text" name="nome">
+        <button onClick="adicionar()">Adicionar</button>
+
+        <ul id="lista">
+
+        </ul>
+    </div>
+
+    <script>
+
+        function adicionar() {
+            var itemElement = document.createElement("li");
+
+            var nome = document.querySelector("[name=nome]");
+
+            var textElement = document.createTextNode(nome.value);
+            itemElement.appendChild(textElement);
+
+            var listaElement = document.querySelector("#lista");
+            listaElement.appendChild(itemElement);
+
+            nome.value = "";
+        }
+
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        for (const iterator of nomes) {
+            var itemElement = document.createElement("li");
+
+            var textElement = document.createTextNode(iterator);
+            itemElement.appendChild(textElement);
+
+            var listaElement = document.querySelector("#lista");
+            listaElement.appendChild(itemElement);
+        }
+
+    </script>
+
+</body>
+
+</html>

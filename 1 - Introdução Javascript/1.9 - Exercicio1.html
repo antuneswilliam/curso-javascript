@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Teste Javascript</title>
+</head>
+
+<body>
+
+    <script>
+
+        //exercício 1
+        var endereco = {
+            rua: "Rua dos pinheiros",
+            numero: 1293,
+            bairro: "Centro",
+            cidade: "São Paulo",
+            uf: "SP"
+        };
+
+        function exercicio1(endereco) {
+            return (`O usuário mora em ${endereco.cidade} / ${endereco.uf}, no bairro ${endereco.bairro}, na rua \"${endereco.rua}\" com nº ${endereco.numero}.`);
+        }
+
+        var retorno = exercicio1(endereco);
+
+        console.log(retorno);
+    </script>
+
+</body>
+
+</html>

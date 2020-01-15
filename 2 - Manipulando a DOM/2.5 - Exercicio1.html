@@ -1,0 +1,35 @@
+<html>
+
+<head>
+    <title>Teste Javascript</title>
+</head>
+
+<body>
+    <div id="app">
+        <button id="botao">Add</button>
+        <br>
+        <br>
+    </div>
+    <script>
+
+        function addBox() {
+            var boxElement = document.createElement('div');
+            boxElement.style.width = 100;
+            boxElement.style.height = 100;
+            boxElement.style.backgroundColor = '#f00';
+
+            var containerElement = document.querySelector('#app');
+            containerElement.appendChild(boxElement);
+
+            var br = document.createElement('br');
+            containerElement.appendChild(br);
+        }
+
+        var btnElement = document.querySelector('#botao');
+        console.log(btnElement);
+        btnElement.onclick = addBox; 
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Teste Javascript</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <ul id="lista">
+
+        </ul>
+    </div>
+
+    <script>
+
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        for (const iterator of nomes) {
+            var itemElement = document.createElement("li");
+
+            var textElement = document.createTextNode(iterator);
+            itemElement.appendChild(textElement);
+
+            var listaElement = document.querySelector("#lista");
+            listaElement.appendChild(itemElement);
+        }
+
+    </script>
+
+</body>
+
+</html>

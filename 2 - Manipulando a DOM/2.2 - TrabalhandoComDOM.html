@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Teste Javascript</title>
+</head>
+
+<body>
+    <div id="app">
+        <input type="text" name="nome" id="nome" />
+        <button class="botao">Adicionar</button>
+    </div>
+    <script>
+        var inputElement = document.getElementById("nome");
+
+        console.log(inputElement);
+
+        var inputElement = document.getElementsByTagName("input");
+
+        console.log(inputElement);
+
+        var inputElement = document.getElementsByClassName("botao");
+
+        console.log(inputElement);
+
+        var inputElement = document.querySelector("body div#app input");
+
+        console.log(inputElement);
+
+        //retorna o primeiro elemento encontrado
+        var inputElement = document.querySelector("input[name=nome]");
+
+        console.log(inputElement);
+
+        //retorna todos os elementos da condição
+        var inputElement = document.querySelectorAll("input[type=text]");
+
+        console.log(inputElement);
+
+        var inputElement = document.querySelector("input[name=nome");
+        var btnElement = document.querySelector("button.botao");
+        btnElement.onclick = function () {
+            var text = inputElement.value;
+            alert(text);
+        }
+    </script>
+
+</body>
+
+</html>

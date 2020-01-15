@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Teste Javascript</title>
+</head>
+
+<body>
+
+    <script>
+        function temHabilidade(skills) {
+
+            var index = skills.indexOf("Javascript");
+
+            console.log(index);
+
+            if (index != -1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        var skills = ["Javascript", "ReactJS", "React Native"];
+        var tem = temHabilidade(skills); // true ou false
+        console.log(tem);
+    </script>
+
+</body>
+
+</html>
